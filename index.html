@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pixel Art</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="title">Pixel Art</div>
+      <div class="container">
+        <div class="heading">Choose Grid Size</div>
+        <form id="sizePicker" class="formContainer">
+          <div class="inputContainer">
+            <label class="labelText">GridWidth</label>
+            <input
+              type="number"
+              name="width"
+              id="inputWidth"
+              value="5"
+              min="1"
+              max="20"
+              class="input"
+            />
+
+            <label class="labelText">GridHeight</label>
+            <input
+              type="number"
+              name="height"
+              id="inputHeight"
+              value="5"
+              min="1"
+              max="20"
+              class="input"
+            />
+          </div>
+          <button class="submitBtn">Submit</button>
+        </form>
+
+        <div>Color Picker</div>
+        <input type="color" id="color-picker" class="colorPicker" />
+
+        <div class="canvasTitle">Design Canvas</div>
+        <table id="pixelCanvas"></table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
